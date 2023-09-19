@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+    font-family: 'Oswald', sans-serif;
+    
+}
+header{
+    background-color: blue;
+    margin-bottom: 10px;
+}
+header .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul li{
+    display: inline-block;
+    list-style: none
+}
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sobre_loja img{
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.sobre_loja_itens{
+    display: grid;
+    grid-template-columns:44% 44%;
+    column-gap: 2%;
+    align-items: center;
+}
+body{
+    background-color: bisque;
+}
+
+.teste{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+    column-gap: 1%;
+    
+}
+.teste form{
+    margin: 10px 0px;
+}
+.teste form img{
+    width: 100%;
+}
+
+.teste form button{
+    padding: 5px 90px;
+    background-color: blue;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.teste form button:hover{
+    cursor: pointer;
+}
+
+.produtos_loja{
+    padding: 10px 0;
+}
+
+@media screen and (max-width:767px) {
+    .sobre_loja_itens{
+        display: block;
+    }
+    .teste{
+        display: block;
+        
+
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .teste form button{
+        padding: 5px 280px;
+    }
+}
+
+@media screen and (min-width:768px)and (max-width:1023px) {
+    
+    .teste{
+        grid-template-columns: 44% 44%;
+        column-gap: 2%;
+        margin-left: 5%;
+    }
+    .teste img{
+        max-width: 300px;
+    }
+    
+}
